@@ -1,0 +1,26 @@
+# Core dependencies for the analysis code.
+# Baseline inferred from the methods described in the manuscript; not verified
+# against the source code or original execution environment.
+# Check imports, add any missing packages, and pin the versions actually used
+# before treating this file as a complete reproducibility environment.
+
+numpy
+pandas
+scipy
+scikit-learn
+lightgbm
+shap
+matplotlib
+
+# Additional packages: uncomment/add ONLY those required by the actual code.
+# seaborn       # Additional plotting
+# statsmodels   # Statistical / linear-model estimation
+# pygam         # Generalized additive models, if this implementation was used
+# PyALE         # ALE estimation, if this implementation was used
+# optuna        # Hyperparameter search, if this implementation was used
+# openpyxl      # Reading or writing Excel .xlsx files
+# joblib        # Direct use for persistence or parallel computation
+# jupyterlab    # Running notebooks, if required
+
+# Other ALE, tuning, or modelling implementations may require different packages.
+# Include any required local modules in the code directory.
