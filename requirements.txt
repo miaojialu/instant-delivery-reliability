@@ -1,26 +1,25 @@
-# Core dependencies for the analysis code.
-# Baseline inferred from the methods described in the manuscript; not verified
-# against the source code or original execution environment.
-# Check imports, add any missing packages, and pin the versions actually used
-# before treating this file as a complete reproducibility environment.
+# Dependencies checked against imports in:
+# code/main_experiments.py
+# code/supplementary_analyses.py
+# code/lightgbm_utils.py
+#
+# Exact versions from the original analysis environment were not supplied.
+# This is an unpinned dependency list, not a tested reproduction environment.
+# Consult results/software_environment.csv from the original training run
+# before locking versions. PyALE's internal quantile_ied import and sklearn's
+# sparse_output APIs require compatible versions.
 
 numpy
 pandas
 scipy
 scikit-learn
 lightgbm
+optuna
 shap
 matplotlib
+seaborn
+PyALE
+alibi
 
-# Additional packages: uncomment/add ONLY those required by the actual code.
-# seaborn       # Additional plotting
-# statsmodels   # Statistical / linear-model estimation
-# pygam         # Generalized additive models, if this implementation was used
-# PyALE         # ALE estimation, if this implementation was used
-# optuna        # Hyperparameter search, if this implementation was used
-# openpyxl      # Reading or writing Excel .xlsx files
-# joblib        # Direct use for persistence or parallel computation
-# jupyterlab    # Running notebooks, if required
-
-# Other ALE, tuning, or modelling implementations may require different packages.
-# Include any required local modules in the code directory.
+# Optional: install only if using an interactive notebook environment.
+# jupyterlab
